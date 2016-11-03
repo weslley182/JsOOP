@@ -1,4 +1,4 @@
-// aluraframe/client/js/app/controllers/NegociacaoController.js
+// Frame/client/js/app/controllers/NegociacaoController.js
 
 class NegociacaoController {
 
@@ -9,12 +9,20 @@ class NegociacaoController {
         this._inputQuantidade = $('#quantidade');
         this._inputValor = $('#valor');
         this._listaNegociacoes = new ListaNegociacoes();
+        this._negociacoesView = new NegociacoesView($('#negociacoesView'));
+
+        // chamando o método `update` da nossa view.
+        this._negociacoesView.update(this._listaNegociacoes);
+
     }
 
     adiciona(event) {
 
         event.preventDefault();
         this._listaNegociacoes.adiciona(this._criaNegociacao());
+
+        // atualiza a view a cada inclusão para que reflete o estado atual da nossa lista de negociações
+        this._negociacoesView.update(this._listaNegociacoes);
         this._limpaFormulario();
     }
 

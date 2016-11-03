@@ -1,4 +1,4 @@
-// alurapic/client/js/app/models/ListaNegociacoes.js
+// Frame/client/js/app/models/ListaNegociacoes.js
 
 class ListaNegociacoes {
 

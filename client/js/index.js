@@ -1,4 +1,4 @@
-// aluraframe/client/js/index.js
+// Frame/client/js/index.js
 
 var campos = [
     document.querySelector('#data'),
