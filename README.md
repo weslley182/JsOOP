@@ -1,4 +1,4 @@
-# JsOOP
+# JavaScript: ES6, orientação a objetos e padrões de projetos
 
 
 Especificando uma Negociação<br>
